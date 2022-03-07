@@ -1,0 +1,737 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatosSD2" targetNamespace="http://tempuri.org/DatosSD2.xsd" xmlns:mstns="http://tempuri.org/DatosSD2.xsd" xmlns="http://tempuri.org/DatosSD2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="d2_bdConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="d2_bdConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Sistema_D2_Seguridad_Privada.Properties.Settings.GlobalReference.Default.d2_bdConnectionString2" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="usuariosTableAdapter" GeneratorDataComponentClassName="usuariosTableAdapter" Name="usuarios" UserDataComponentName="usuariosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="d2_bdConnectionString2 (Settings)" DbObjectName="`d2_bd`.`usuarios`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`d2_bd`.`usuarios`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idd2_users" DataSetColumn="idd2_users" />
+              <Mapping SourceColumn="NuUsuario" DataSetColumn="NuUsuario" />
+              <Mapping SourceColumn="NombreUs" DataSetColumn="NombreUs" />
+              <Mapping SourceColumn="ApellidoUs" DataSetColumn="ApellidoUs" />
+              <Mapping SourceColumn="TipoUs" DataSetColumn="TipoUs" />
+              <Mapping SourceColumn="ContraUs" DataSetColumn="ContraUs" />
+              <Mapping SourceColumn="DepartamentoUs" DataSetColumn="DepartamentoUs" />
+              <Mapping SourceColumn="EstadoUs" DataSetColumn="EstadoUs" />
+              <Mapping SourceColumn="ComentarioUs" DataSetColumn="ComentarioUs" />
+              <Mapping SourceColumn="UsAdd" DataSetColumn="UsAdd" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sp_empleadosTableAdapter" GeneratorDataComponentClassName="sp_empleadosTableAdapter" Name="sp_empleados" UserDataComponentName="sp_empleadosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="d2_bdConnectionString2 (Settings)" DbObjectName="`d2_bd`.`sp_empleados`" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`d2_bd`.`sp_empleados`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idd2_empleados" DataSetColumn="idd2_empleados" />
+              <Mapping SourceColumn="CURP" DataSetColumn="CURP" />
+              <Mapping SourceColumn="idd2_users" DataSetColumn="idd2_users" />
+              <Mapping SourceColumn="RFC" DataSetColumn="RFC" />
+              <Mapping SourceColumn="NSS" DataSetColumn="NSS" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="A_Paterno" DataSetColumn="A_Paterno" />
+              <Mapping SourceColumn="A_Materno" DataSetColumn="A_Materno" />
+              <Mapping SourceColumn="Escolaridad" DataSetColumn="Escolaridad" />
+              <Mapping SourceColumn="Carrera" DataSetColumn="Carrera" />
+              <Mapping SourceColumn="LugNac" DataSetColumn="LugNac" />
+              <Mapping SourceColumn="FechaNac" DataSetColumn="FechaNac" />
+              <Mapping SourceColumn="Edad" DataSetColumn="Edad" />
+              <Mapping SourceColumn="Emergencia" DataSetColumn="Emergencia" />
+              <Mapping SourceColumn="TelEmer" DataSetColumn="TelEmer" />
+              <Mapping SourceColumn="Parentesco" DataSetColumn="Parentesco" />
+              <Mapping SourceColumn="Colonia" DataSetColumn="Colonia" />
+              <Mapping SourceColumn="Calle" DataSetColumn="Calle" />
+              <Mapping SourceColumn="Numero" DataSetColumn="Numero" />
+              <Mapping SourceColumn="CP" DataSetColumn="CP" />
+              <Mapping SourceColumn="Edo" DataSetColumn="Edo" />
+              <Mapping SourceColumn="Municipio" DataSetColumn="Municipio" />
+              <Mapping SourceColumn="Celular" DataSetColumn="Celular" />
+              <Mapping SourceColumn="TelCasa" DataSetColumn="TelCasa" />
+              <Mapping SourceColumn="Sueldo" DataSetColumn="Sueldo" />
+              <Mapping SourceColumn="Bono" DataSetColumn="Bono" />
+              <Mapping SourceColumn="Turno" DataSetColumn="Turno" />
+              <Mapping SourceColumn="FechaIng" DataSetColumn="FechaIng" />
+              <Mapping SourceColumn="EdoE" DataSetColumn="EdoE" />
+              <Mapping SourceColumn="TipoEmp" DataSetColumn="TipoEmp" />
+              <Mapping SourceColumn="SueldoTotal" DataSetColumn="SueldoTotal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="d2_empleadosTableAdapter" GeneratorDataComponentClassName="d2_empleadosTableAdapter" Name="d2_empleados" UserDataComponentName="d2_empleadosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="d2_bdConnectionString2 (Settings)" DbObjectName="d2_bd.d2_empleados" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `d2_empleados` WHERE ((`idd2_empleados` = @p1) AND (`CURP` = @p2) AND (`idd2_users` = @p3) AND (`RFC` = @p4) AND (`NSS` = @p5) AND (`Nombre` = @p6) AND (`A_Paterno` = @p7) AND (`A_Materno` = @p8) AND (`Escolaridad` = @p9) AND ((@p10 = 1 AND `Carrera` IS NULL) OR (`Carrera` = @p11)) AND (`LugNac` = @p12) AND (`FechaNac` = @p13) AND (`Edad` = @p14) AND ((@p15 = 1 AND `Emergencia` IS NULL) OR (`Emergencia` = @p16)) AND ((@p17 = 1 AND `TelEmer` IS NULL) OR (`TelEmer` = @p18)) AND ((@p19 = 1 AND `Parentesco` IS NULL) OR (`Parentesco` = @p20)) AND (`Colonia` = @p21) AND (`Calle` = @p22) AND (`Numero` = @p23) AND (`CP` = @p24) AND (`Edo` = @p25) AND (`Municipio` = @p26) AND (`Celular` = @p27) AND ((@p28 = 1 AND `TelCasa` IS NULL) OR (`TelCasa` = @p29)) AND (`Sueldo` = @p30) AND (`Bono` = @p31) AND (`Turno` = @p32) AND (`FechaIng` = @p33) AND (`EdoE` = @p34) AND (`TipoEmp` = @p35) AND (`SueldoTotal` = @p36))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="idd2_empleados" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CURP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="idd2_users" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NSS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="A_Paterno" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="A_Materno" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Escolaridad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p10" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="Carrera" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Carrera" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p12" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LugNac" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p13" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="FechaNac" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p14" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Edad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p15" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="Emergencia" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p16" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Emergencia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p17" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="TelEmer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p18" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TelEmer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p19" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="Parentesco" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p20" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Parentesco" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p21" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Colonia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p22" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Calle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p23" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Numero" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p24" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p25" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Edo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p26" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Municipio" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p27" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Celular" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p28" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="TelCasa" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p29" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TelCasa" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@p30" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Sueldo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@p31" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Bono" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p32" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Turno" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p33" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="FechaIng" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p34" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EdoE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p35" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TipoEmp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p36" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SueldoTotal" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `d2_empleados` (`CURP`, `idd2_users`, `RFC`, `NSS`, `Nombre`, `A_Paterno`, `A_Materno`, `Escolaridad`, `Carrera`, `LugNac`, `FechaNac`, `Edad`, `Emergencia`, `TelEmer`, `Parentesco`, `Colonia`, `Calle`, `Numero`, `CP`, `Edo`, `Municipio`, `Celular`, `TelCasa`, `Sueldo`, `Bono`, `Turno`, `FechaIng`, `EdoE`, `TipoEmp`, `SueldoTotal`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CURP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="idd2_users" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NSS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="A_Paterno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="A_Materno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Escolaridad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LugNac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p11" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="FechaNac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p12" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Edad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p13" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Emergencia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p14" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TelEmer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p15" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Parentesco" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p16" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Colonia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p17" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Calle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p18" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Numero" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p19" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p20" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Edo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p21" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Municipio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p22" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Celular" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p23" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TelCasa" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@p24" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Sueldo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@p25" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Bono" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p26" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Turno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p27" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="FechaIng" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p28" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EdoE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p29" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TipoEmp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p30" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SueldoTotal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM d2_empleados WHERE idd2_empleados = @valor</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="valor" ColumnName="idd2_empleados" DataSourceName="d2_bd.d2_empleados" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@valor" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="idd2_empleados" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `d2_empleados` SET `CURP` = @p1, `idd2_users` = @p2, `RFC` = @p3, `NSS` = @p4, `Nombre` = @p5, `A_Paterno` = @p6, `A_Materno` = @p7, `Escolaridad` = @p8, `Carrera` = @p9, `LugNac` = @p10, `FechaNac` = @p11, `Edad` = @p12, `Emergencia` = @p13, `TelEmer` = @p14, `Parentesco` = @p15, `Colonia` = @p16, `Calle` = @p17, `Numero` = @p18, `CP` = @p19, `Edo` = @p20, `Municipio` = @p21, `Celular` = @p22, `TelCasa` = @p23, `Sueldo` = @p24, `Bono` = @p25, `Turno` = @p26, `FechaIng` = @p27, `EdoE` = @p28, `TipoEmp` = @p29, `SueldoTotal` = @p30 WHERE ((`idd2_empleados` = @p31) AND (`CURP` = @p32) AND (`idd2_users` = @p33) AND (`RFC` = @p34) AND (`NSS` = @p35) AND (`Nombre` = @p36) AND (`A_Paterno` = @p37) AND (`A_Materno` = @p38) AND (`Escolaridad` = @p39) AND ((@p40 = 1 AND `Carrera` IS NULL) OR (`Carrera` = @p41)) AND (`LugNac` = @p42) AND (`FechaNac` = @p43) AND (`Edad` = @p44) AND ((@p45 = 1 AND `Emergencia` IS NULL) OR (`Emergencia` = @p46)) AND ((@p47 = 1 AND `TelEmer` IS NULL) OR (`TelEmer` = @p48)) AND ((@p49 = 1 AND `Parentesco` IS NULL) OR (`Parentesco` = @p50)) AND (`Colonia` = @p51) AND (`Calle` = @p52) AND (`Numero` = @p53) AND (`CP` = @p54) AND (`Edo` = @p55) AND (`Municipio` = @p56) AND (`Celular` = @p57) AND ((@p58 = 1 AND `TelCasa` IS NULL) OR (`TelCasa` = @p59)) AND (`Sueldo` = @p60) AND (`Bono` = @p61) AND (`Turno` = @p62) AND (`FechaIng` = @p63) AND (`EdoE` = @p64) AND (`TipoEmp` = @p65) AND (`SueldoTotal` = @p66))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CURP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="idd2_users" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NSS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nombre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="A_Paterno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="A_Materno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Escolaridad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Carrera" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LugNac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p11" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="FechaNac" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p12" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Edad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p13" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Emergencia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p14" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TelEmer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p15" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Parentesco" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p16" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Colonia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p17" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Calle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p18" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Numero" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p19" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p20" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Edo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p21" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Municipio" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p22" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Celular" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p23" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TelCasa" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@p24" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Sueldo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@p25" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Bono" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p26" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Turno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p27" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="FechaIng" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p28" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EdoE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p29" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TipoEmp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p30" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SueldoTotal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p31" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="idd2_empleados" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p32" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CURP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p33" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="idd2_users" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p34" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="RFC" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p35" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NSS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p36" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nombre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p37" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="A_Paterno" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p38" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="A_Materno" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p39" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Escolaridad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p40" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="Carrera" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p41" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Carrera" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p42" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LugNac" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p43" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="FechaNac" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p44" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Edad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p45" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="Emergencia" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p46" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Emergencia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p47" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="TelEmer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p48" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TelEmer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p49" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="Parentesco" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p50" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Parentesco" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p51" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Colonia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p52" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Calle" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p53" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Numero" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p54" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p55" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Edo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p56" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Municipio" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p57" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Celular" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p58" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="TelCasa" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p59" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TelCasa" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@p60" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Sueldo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@p61" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Bono" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p62" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Turno" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p63" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="FechaIng" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p64" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EdoE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p65" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TipoEmp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p66" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="SueldoTotal" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idd2_empleados" DataSetColumn="idd2_empleados" />
+              <Mapping SourceColumn="CURP" DataSetColumn="CURP" />
+              <Mapping SourceColumn="idd2_users" DataSetColumn="idd2_users" />
+              <Mapping SourceColumn="RFC" DataSetColumn="RFC" />
+              <Mapping SourceColumn="NSS" DataSetColumn="NSS" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="A_Paterno" DataSetColumn="A_Paterno" />
+              <Mapping SourceColumn="A_Materno" DataSetColumn="A_Materno" />
+              <Mapping SourceColumn="Escolaridad" DataSetColumn="Escolaridad" />
+              <Mapping SourceColumn="Carrera" DataSetColumn="Carrera" />
+              <Mapping SourceColumn="LugNac" DataSetColumn="LugNac" />
+              <Mapping SourceColumn="FechaNac" DataSetColumn="FechaNac" />
+              <Mapping SourceColumn="Edad" DataSetColumn="Edad" />
+              <Mapping SourceColumn="Emergencia" DataSetColumn="Emergencia" />
+              <Mapping SourceColumn="TelEmer" DataSetColumn="TelEmer" />
+              <Mapping SourceColumn="Parentesco" DataSetColumn="Parentesco" />
+              <Mapping SourceColumn="Colonia" DataSetColumn="Colonia" />
+              <Mapping SourceColumn="Calle" DataSetColumn="Calle" />
+              <Mapping SourceColumn="Numero" DataSetColumn="Numero" />
+              <Mapping SourceColumn="CP" DataSetColumn="CP" />
+              <Mapping SourceColumn="Edo" DataSetColumn="Edo" />
+              <Mapping SourceColumn="Municipio" DataSetColumn="Municipio" />
+              <Mapping SourceColumn="Celular" DataSetColumn="Celular" />
+              <Mapping SourceColumn="TelCasa" DataSetColumn="TelCasa" />
+              <Mapping SourceColumn="Sueldo" DataSetColumn="Sueldo" />
+              <Mapping SourceColumn="Bono" DataSetColumn="Bono" />
+              <Mapping SourceColumn="Turno" DataSetColumn="Turno" />
+              <Mapping SourceColumn="FechaIng" DataSetColumn="FechaIng" />
+              <Mapping SourceColumn="EdoE" DataSetColumn="EdoE" />
+              <Mapping SourceColumn="TipoEmp" DataSetColumn="TipoEmp" />
+              <Mapping SourceColumn="SueldoTotal" DataSetColumn="SueldoTotal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatosSD2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DatosSD2" msprop:Generator_UserDSName="DatosSD2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="usuarios" msprop:Generator_TableClassName="usuariosDataTable" msprop:Generator_TableVarName="tableusuarios" msprop:Generator_TablePropName="usuarios" msprop:Generator_RowDeletingName="usuariosRowDeleting" msprop:Generator_RowChangingName="usuariosRowChanging" msprop:Generator_RowEvHandlerName="usuariosRowChangeEventHandler" msprop:Generator_RowDeletedName="usuariosRowDeleted" msprop:Generator_UserTableName="usuarios" msprop:Generator_RowChangedName="usuariosRowChanged" msprop:Generator_RowEvArgName="usuariosRowChangeEvent" msprop:Generator_RowClassName="usuariosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idd2_users" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidd2_users" msprop:Generator_ColumnPropNameInRow="idd2_users" msprop:Generator_ColumnPropNameInTable="idd2_usersColumn" msprop:Generator_UserColumnName="idd2_users" type="xs:int" />
+              <xs:element name="NuUsuario" msprop:Generator_ColumnVarNameInTable="columnNuUsuario" msprop:Generator_ColumnPropNameInRow="NuUsuario" msprop:Generator_ColumnPropNameInTable="NuUsuarioColumn" msprop:Generator_UserColumnName="NuUsuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreUs" msprop:Generator_ColumnVarNameInTable="columnNombreUs" msprop:Generator_ColumnPropNameInRow="NombreUs" msprop:Generator_ColumnPropNameInTable="NombreUsColumn" msprop:Generator_UserColumnName="NombreUs">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApellidoUs" msprop:Generator_ColumnVarNameInTable="columnApellidoUs" msprop:Generator_ColumnPropNameInRow="ApellidoUs" msprop:Generator_ColumnPropNameInTable="ApellidoUsColumn" msprop:Generator_UserColumnName="ApellidoUs">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipoUs" msprop:Generator_ColumnVarNameInTable="columnTipoUs" msprop:Generator_ColumnPropNameInRow="TipoUs" msprop:Generator_ColumnPropNameInTable="TipoUsColumn" msprop:Generator_UserColumnName="TipoUs">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContraUs" msprop:Generator_ColumnVarNameInTable="columnContraUs" msprop:Generator_ColumnPropNameInRow="ContraUs" msprop:Generator_ColumnPropNameInTable="ContraUsColumn" msprop:Generator_UserColumnName="ContraUs">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DepartamentoUs" msprop:Generator_ColumnVarNameInTable="columnDepartamentoUs" msprop:Generator_ColumnPropNameInRow="DepartamentoUs" msprop:Generator_ColumnPropNameInTable="DepartamentoUsColumn" msprop:Generator_UserColumnName="DepartamentoUs">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EstadoUs" msprop:Generator_ColumnVarNameInTable="columnEstadoUs" msprop:Generator_ColumnPropNameInRow="EstadoUs" msprop:Generator_ColumnPropNameInTable="EstadoUsColumn" msprop:Generator_UserColumnName="EstadoUs">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ComentarioUs" msprop:Generator_ColumnVarNameInTable="columnComentarioUs" msprop:Generator_ColumnPropNameInRow="ComentarioUs" msprop:Generator_ColumnPropNameInTable="ComentarioUsColumn" msprop:Generator_UserColumnName="ComentarioUs">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UsAdd" msprop:Generator_ColumnVarNameInTable="columnUsAdd" msprop:Generator_ColumnPropNameInRow="UsAdd" msprop:Generator_ColumnPropNameInTable="UsAddColumn" msprop:Generator_UserColumnName="UsAdd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sp_empleados" msprop:Generator_TableClassName="sp_empleadosDataTable" msprop:Generator_TableVarName="tablesp_empleados" msprop:Generator_TablePropName="sp_empleados" msprop:Generator_RowDeletingName="sp_empleadosRowDeleting" msprop:Generator_RowChangingName="sp_empleadosRowChanging" msprop:Generator_RowEvHandlerName="sp_empleadosRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_empleadosRowDeleted" msprop:Generator_UserTableName="sp_empleados" msprop:Generator_RowChangedName="sp_empleadosRowChanged" msprop:Generator_RowEvArgName="sp_empleadosRowChangeEvent" msprop:Generator_RowClassName="sp_empleadosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idd2_empleados" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidd2_empleados" msprop:Generator_ColumnPropNameInRow="idd2_empleados" msprop:Generator_ColumnPropNameInTable="idd2_empleadosColumn" msprop:Generator_UserColumnName="idd2_empleados" type="xs:int" />
+              <xs:element name="CURP" msprop:Generator_ColumnVarNameInTable="columnCURP" msprop:Generator_ColumnPropNameInRow="CURP" msprop:Generator_ColumnPropNameInTable="CURPColumn" msprop:Generator_UserColumnName="CURP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idd2_users" msprop:Generator_ColumnVarNameInTable="columnidd2_users" msprop:Generator_ColumnPropNameInRow="idd2_users" msprop:Generator_ColumnPropNameInTable="idd2_usersColumn" msprop:Generator_UserColumnName="idd2_users" type="xs:int" />
+              <xs:element name="RFC" msprop:Generator_ColumnVarNameInTable="columnRFC" msprop:Generator_ColumnPropNameInRow="RFC" msprop:Generator_ColumnPropNameInTable="RFCColumn" msprop:Generator_UserColumnName="RFC">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NSS" msprop:Generator_ColumnVarNameInTable="columnNSS" msprop:Generator_ColumnPropNameInRow="NSS" msprop:Generator_ColumnPropNameInTable="NSSColumn" msprop:Generator_UserColumnName="NSS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="A_Paterno" msprop:Generator_ColumnVarNameInTable="columnA_Paterno" msprop:Generator_ColumnPropNameInRow="A_Paterno" msprop:Generator_ColumnPropNameInTable="A_PaternoColumn" msprop:Generator_UserColumnName="A_Paterno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="A_Materno" msprop:Generator_ColumnVarNameInTable="columnA_Materno" msprop:Generator_ColumnPropNameInRow="A_Materno" msprop:Generator_ColumnPropNameInTable="A_MaternoColumn" msprop:Generator_UserColumnName="A_Materno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Escolaridad" msprop:Generator_ColumnVarNameInTable="columnEscolaridad" msprop:Generator_ColumnPropNameInRow="Escolaridad" msprop:Generator_ColumnPropNameInTable="EscolaridadColumn" msprop:Generator_UserColumnName="Escolaridad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Carrera" msprop:Generator_ColumnVarNameInTable="columnCarrera" msprop:Generator_ColumnPropNameInRow="Carrera" msprop:Generator_ColumnPropNameInTable="CarreraColumn" msprop:Generator_UserColumnName="Carrera" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LugNac" msprop:Generator_ColumnVarNameInTable="columnLugNac" msprop:Generator_ColumnPropNameInRow="LugNac" msprop:Generator_ColumnPropNameInTable="LugNacColumn" msprop:Generator_UserColumnName="LugNac">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaNac" msprop:Generator_ColumnVarNameInTable="columnFechaNac" msprop:Generator_ColumnPropNameInRow="FechaNac" msprop:Generator_ColumnPropNameInTable="FechaNacColumn" msprop:Generator_UserColumnName="FechaNac" type="xs:dateTime" />
+              <xs:element name="Edad" msprop:Generator_ColumnVarNameInTable="columnEdad" msprop:Generator_ColumnPropNameInRow="Edad" msprop:Generator_ColumnPropNameInTable="EdadColumn" msprop:Generator_UserColumnName="Edad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Emergencia" msprop:Generator_ColumnVarNameInTable="columnEmergencia" msprop:Generator_ColumnPropNameInRow="Emergencia" msprop:Generator_ColumnPropNameInTable="EmergenciaColumn" msprop:Generator_UserColumnName="Emergencia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TelEmer" msprop:Generator_ColumnVarNameInTable="columnTelEmer" msprop:Generator_ColumnPropNameInRow="TelEmer" msprop:Generator_ColumnPropNameInTable="TelEmerColumn" msprop:Generator_UserColumnName="TelEmer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Parentesco" msprop:Generator_ColumnVarNameInTable="columnParentesco" msprop:Generator_ColumnPropNameInRow="Parentesco" msprop:Generator_ColumnPropNameInTable="ParentescoColumn" msprop:Generator_UserColumnName="Parentesco" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Colonia" msprop:Generator_ColumnVarNameInTable="columnColonia" msprop:Generator_ColumnPropNameInRow="Colonia" msprop:Generator_ColumnPropNameInTable="ColoniaColumn" msprop:Generator_UserColumnName="Colonia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Calle" msprop:Generator_ColumnVarNameInTable="columnCalle" msprop:Generator_ColumnPropNameInRow="Calle" msprop:Generator_ColumnPropNameInTable="CalleColumn" msprop:Generator_UserColumnName="Calle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero" msprop:Generator_ColumnVarNameInTable="columnNumero" msprop:Generator_ColumnPropNameInRow="Numero" msprop:Generator_ColumnPropNameInTable="NumeroColumn" msprop:Generator_UserColumnName="Numero">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CP" msprop:Generator_ColumnVarNameInTable="columnCP" msprop:Generator_ColumnPropNameInRow="CP" msprop:Generator_ColumnPropNameInTable="CPColumn" msprop:Generator_UserColumnName="CP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Edo" msprop:Generator_ColumnVarNameInTable="columnEdo" msprop:Generator_ColumnPropNameInRow="Edo" msprop:Generator_ColumnPropNameInTable="EdoColumn" msprop:Generator_UserColumnName="Edo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Municipio" msprop:Generator_ColumnVarNameInTable="columnMunicipio" msprop:Generator_ColumnPropNameInRow="Municipio" msprop:Generator_ColumnPropNameInTable="MunicipioColumn" msprop:Generator_UserColumnName="Municipio">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Celular" msprop:Generator_ColumnVarNameInTable="columnCelular" msprop:Generator_ColumnPropNameInRow="Celular" msprop:Generator_ColumnPropNameInTable="CelularColumn" msprop:Generator_UserColumnName="Celular">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TelCasa" msprop:Generator_ColumnVarNameInTable="columnTelCasa" msprop:Generator_ColumnPropNameInRow="TelCasa" msprop:Generator_ColumnPropNameInTable="TelCasaColumn" msprop:Generator_UserColumnName="TelCasa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sueldo" msprop:Generator_ColumnVarNameInTable="columnSueldo" msprop:Generator_ColumnPropNameInRow="Sueldo" msprop:Generator_ColumnPropNameInTable="SueldoColumn" msprop:Generator_UserColumnName="Sueldo" type="xs:double" />
+              <xs:element name="Bono" msprop:Generator_ColumnVarNameInTable="columnBono" msprop:Generator_ColumnPropNameInRow="Bono" msprop:Generator_ColumnPropNameInTable="BonoColumn" msprop:Generator_UserColumnName="Bono" type="xs:double" />
+              <xs:element name="Turno" msprop:Generator_ColumnVarNameInTable="columnTurno" msprop:Generator_ColumnPropNameInRow="Turno" msprop:Generator_ColumnPropNameInTable="TurnoColumn" msprop:Generator_UserColumnName="Turno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaIng" msprop:Generator_ColumnVarNameInTable="columnFechaIng" msprop:Generator_ColumnPropNameInRow="FechaIng" msprop:Generator_ColumnPropNameInTable="FechaIngColumn" msprop:Generator_UserColumnName="FechaIng" type="xs:dateTime" />
+              <xs:element name="EdoE" msprop:Generator_ColumnVarNameInTable="columnEdoE" msprop:Generator_ColumnPropNameInRow="EdoE" msprop:Generator_ColumnPropNameInTable="EdoEColumn" msprop:Generator_UserColumnName="EdoE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipoEmp" msprop:Generator_ColumnVarNameInTable="columnTipoEmp" msprop:Generator_ColumnPropNameInRow="TipoEmp" msprop:Generator_ColumnPropNameInTable="TipoEmpColumn" msprop:Generator_UserColumnName="TipoEmp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SueldoTotal" msprop:Generator_ColumnVarNameInTable="columnSueldoTotal" msprop:Generator_ColumnPropNameInRow="SueldoTotal" msprop:Generator_ColumnPropNameInTable="SueldoTotalColumn" msprop:Generator_UserColumnName="SueldoTotal" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="d2_empleados" msprop:Generator_TableClassName="d2_empleadosDataTable" msprop:Generator_TableVarName="tabled2_empleados" msprop:Generator_TablePropName="d2_empleados" msprop:Generator_RowDeletingName="d2_empleadosRowDeleting" msprop:Generator_RowChangingName="d2_empleadosRowChanging" msprop:Generator_RowEvHandlerName="d2_empleadosRowChangeEventHandler" msprop:Generator_RowDeletedName="d2_empleadosRowDeleted" msprop:Generator_UserTableName="d2_empleados" msprop:Generator_RowChangedName="d2_empleadosRowChanged" msprop:Generator_RowEvArgName="d2_empleadosRowChangeEvent" msprop:Generator_RowClassName="d2_empleadosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idd2_empleados" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidd2_empleados" msprop:Generator_ColumnPropNameInRow="idd2_empleados" msprop:Generator_ColumnPropNameInTable="idd2_empleadosColumn" msprop:Generator_UserColumnName="idd2_empleados" type="xs:int" />
+              <xs:element name="CURP" msprop:Generator_ColumnVarNameInTable="columnCURP" msprop:Generator_ColumnPropNameInRow="CURP" msprop:Generator_ColumnPropNameInTable="CURPColumn" msprop:Generator_UserColumnName="CURP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idd2_users" msprop:Generator_ColumnVarNameInTable="columnidd2_users" msprop:Generator_ColumnPropNameInRow="idd2_users" msprop:Generator_ColumnPropNameInTable="idd2_usersColumn" msprop:Generator_UserColumnName="idd2_users" type="xs:int" />
+              <xs:element name="RFC" msprop:Generator_ColumnVarNameInTable="columnRFC" msprop:Generator_ColumnPropNameInRow="RFC" msprop:Generator_ColumnPropNameInTable="RFCColumn" msprop:Generator_UserColumnName="RFC">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NSS" msprop:Generator_ColumnVarNameInTable="columnNSS" msprop:Generator_ColumnPropNameInRow="NSS" msprop:Generator_ColumnPropNameInTable="NSSColumn" msprop:Generator_UserColumnName="NSS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="A_Paterno" msprop:Generator_ColumnVarNameInTable="columnA_Paterno" msprop:Generator_ColumnPropNameInRow="A_Paterno" msprop:Generator_ColumnPropNameInTable="A_PaternoColumn" msprop:Generator_UserColumnName="A_Paterno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="A_Materno" msprop:Generator_ColumnVarNameInTable="columnA_Materno" msprop:Generator_ColumnPropNameInRow="A_Materno" msprop:Generator_ColumnPropNameInTable="A_MaternoColumn" msprop:Generator_UserColumnName="A_Materno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Escolaridad" msprop:Generator_ColumnVarNameInTable="columnEscolaridad" msprop:Generator_ColumnPropNameInRow="Escolaridad" msprop:Generator_ColumnPropNameInTable="EscolaridadColumn" msprop:Generator_UserColumnName="Escolaridad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Carrera" msprop:Generator_ColumnVarNameInTable="columnCarrera" msprop:Generator_ColumnPropNameInRow="Carrera" msprop:Generator_ColumnPropNameInTable="CarreraColumn" msprop:Generator_UserColumnName="Carrera" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LugNac" msprop:Generator_ColumnVarNameInTable="columnLugNac" msprop:Generator_ColumnPropNameInRow="LugNac" msprop:Generator_ColumnPropNameInTable="LugNacColumn" msprop:Generator_UserColumnName="LugNac">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaNac" msprop:Generator_ColumnVarNameInTable="columnFechaNac" msprop:Generator_ColumnPropNameInRow="FechaNac" msprop:Generator_ColumnPropNameInTable="FechaNacColumn" msprop:Generator_UserColumnName="FechaNac" type="xs:dateTime" />
+              <xs:element name="Edad" msprop:Generator_ColumnVarNameInTable="columnEdad" msprop:Generator_ColumnPropNameInRow="Edad" msprop:Generator_ColumnPropNameInTable="EdadColumn" msprop:Generator_UserColumnName="Edad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Emergencia" msprop:Generator_ColumnVarNameInTable="columnEmergencia" msprop:Generator_ColumnPropNameInRow="Emergencia" msprop:Generator_ColumnPropNameInTable="EmergenciaColumn" msprop:Generator_UserColumnName="Emergencia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TelEmer" msprop:Generator_ColumnVarNameInTable="columnTelEmer" msprop:Generator_ColumnPropNameInRow="TelEmer" msprop:Generator_ColumnPropNameInTable="TelEmerColumn" msprop:Generator_UserColumnName="TelEmer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Parentesco" msprop:Generator_ColumnVarNameInTable="columnParentesco" msprop:Generator_ColumnPropNameInRow="Parentesco" msprop:Generator_ColumnPropNameInTable="ParentescoColumn" msprop:Generator_UserColumnName="Parentesco" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Colonia" msprop:Generator_ColumnVarNameInTable="columnColonia" msprop:Generator_ColumnPropNameInRow="Colonia" msprop:Generator_ColumnPropNameInTable="ColoniaColumn" msprop:Generator_UserColumnName="Colonia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Calle" msprop:Generator_ColumnVarNameInTable="columnCalle" msprop:Generator_ColumnPropNameInRow="Calle" msprop:Generator_ColumnPropNameInTable="CalleColumn" msprop:Generator_UserColumnName="Calle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero" msprop:Generator_ColumnVarNameInTable="columnNumero" msprop:Generator_ColumnPropNameInRow="Numero" msprop:Generator_ColumnPropNameInTable="NumeroColumn" msprop:Generator_UserColumnName="Numero">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CP" msprop:Generator_ColumnVarNameInTable="columnCP" msprop:Generator_ColumnPropNameInRow="CP" msprop:Generator_ColumnPropNameInTable="CPColumn" msprop:Generator_UserColumnName="CP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Edo" msprop:Generator_ColumnVarNameInTable="columnEdo" msprop:Generator_ColumnPropNameInRow="Edo" msprop:Generator_ColumnPropNameInTable="EdoColumn" msprop:Generator_UserColumnName="Edo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Municipio" msprop:Generator_ColumnVarNameInTable="columnMunicipio" msprop:Generator_ColumnPropNameInRow="Municipio" msprop:Generator_ColumnPropNameInTable="MunicipioColumn" msprop:Generator_UserColumnName="Municipio">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Celular" msprop:Generator_ColumnVarNameInTable="columnCelular" msprop:Generator_ColumnPropNameInRow="Celular" msprop:Generator_ColumnPropNameInTable="CelularColumn" msprop:Generator_UserColumnName="Celular">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TelCasa" msprop:Generator_ColumnVarNameInTable="columnTelCasa" msprop:Generator_ColumnPropNameInRow="TelCasa" msprop:Generator_ColumnPropNameInTable="TelCasaColumn" msprop:Generator_UserColumnName="TelCasa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sueldo" msprop:Generator_ColumnVarNameInTable="columnSueldo" msprop:Generator_ColumnPropNameInRow="Sueldo" msprop:Generator_ColumnPropNameInTable="SueldoColumn" msprop:Generator_UserColumnName="Sueldo" type="xs:double" />
+              <xs:element name="Bono" msprop:Generator_ColumnVarNameInTable="columnBono" msprop:Generator_ColumnPropNameInRow="Bono" msprop:Generator_ColumnPropNameInTable="BonoColumn" msprop:Generator_UserColumnName="Bono" type="xs:double" />
+              <xs:element name="Turno" msprop:Generator_ColumnVarNameInTable="columnTurno" msprop:Generator_ColumnPropNameInRow="Turno" msprop:Generator_ColumnPropNameInTable="TurnoColumn" msprop:Generator_UserColumnName="Turno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaIng" msprop:Generator_ColumnVarNameInTable="columnFechaIng" msprop:Generator_ColumnPropNameInRow="FechaIng" msprop:Generator_ColumnPropNameInTable="FechaIngColumn" msprop:Generator_UserColumnName="FechaIng" type="xs:dateTime" />
+              <xs:element name="EdoE" msprop:Generator_ColumnVarNameInTable="columnEdoE" msprop:Generator_ColumnPropNameInRow="EdoE" msprop:Generator_ColumnPropNameInTable="EdoEColumn" msprop:Generator_UserColumnName="EdoE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipoEmp" msprop:Generator_ColumnVarNameInTable="columnTipoEmp" msprop:Generator_ColumnPropNameInRow="TipoEmp" msprop:Generator_ColumnPropNameInTable="TipoEmpColumn" msprop:Generator_UserColumnName="TipoEmp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SueldoTotal" msprop:Generator_ColumnVarNameInTable="columnSueldoTotal" msprop:Generator_ColumnPropNameInRow="SueldoTotal" msprop:Generator_ColumnPropNameInTable="SueldoTotalColumn" msprop:Generator_UserColumnName="SueldoTotal" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:usuarios" />
+      <xs:field xpath="mstns:idd2_users" />
+    </xs:unique>
+    <xs:unique name="sp_empleados_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:sp_empleados" />
+      <xs:field xpath="mstns:idd2_empleados" />
+    </xs:unique>
+    <xs:unique name="d2_empleados_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:d2_empleados" />
+      <xs:field xpath="mstns:idd2_empleados" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
